@@ -11,7 +11,7 @@
 | Модель | Тип | MBTI Accuracy | (I)ntroversion / (E)xtraversion | Примечание |
 | :--- | :--- | :--- | :--- | :--- |
 | **Qwen 3 8B / Apriel 1.5 15B** | Local (4-bit) | \~6% | Random | Непригодны для zero-shot психометрии |
-| **DeepSeek V3.2** | API (FP) | 52.5% | 85.5% | [cite_start]Strong Baseline [cite: 726] |
+| **DeepSeek V3.2** | API (FP) | 52.5% | 85.5% |Strong Baseline |
 | **Gemini 3.0 Pro** | SOTA | **74.0%** | **98.0%** | Pilot Study (N=60) |
 
 ## 🚀 Как запустить код (Reproducibility)
@@ -35,14 +35,14 @@
 ## 📂 Описание файлов
 
   * `notebooks/`
-      * [cite_start]`local_models_inference.ipynb` — эксперименты с квантованными моделями (Qwen, Llava) через `transformers` и `bitsandbytes`.
-      * [cite_start]`deepseek_inference.ipynb` — асинхронный пайплайн для DeepSeek V3.2 через API (использует `AsyncOpenAI` и `tenacity`).
+      * `local_models_inference.ipynb` — эксперименты с квантованными моделями (Qwen, Llava) через `transformers` и `bitsandbytes`.
+      * `deepseek_inference.ipynb` — асинхронный пайплайн для DeepSeek V3.2 через API (использует `AsyncOpenAI` и `tenacity`).
   * `results/`
       * Содержит сырые CSV файлы с предсказаниями моделей и итоговые метрики точности.
 
 ## 🛠 Используемые технологии
 
-  * [cite_start]**Frameworks:** PyTorch, HuggingFace Transformers, Polars.
+  * **Frameworks:** PyTorch, HuggingFace Transformers, Polars.
   * **Models:** Qwen 3 8B, Apriel 1.5 15B, DeepSeek V3.2, Gemini 3.0 Pro.
   * **Metrics:** Scikit-learn (Accuracy, F1-Macro, Precision/Recall).
 
