@@ -25,9 +25,9 @@
 1.  Создайте новый ноутбук на [Kaggle](https://www.kaggle.com/).
 2.  Импортируйте нужный файл `.ipynb` из папки `notebooks/` этого репозитория.
 3.  **Добавьте датасеты** (Add Input) в ваш ноутбук:
-      * [MBTI Type Dataset](https://www.google.com/search?q=https://www.kaggle.com/datasources) (поиск по `mbti-type`)
-      * [Essays Big5](https://www.google.com/search?q=https://www.kaggle.com/datasources) (поиск по `essays-big5`)
-      * [Personae Corpus](https://www.google.com/search?q=https://www.kaggle.com/datasources) (поиск по `personae-corpus`)
+      * [MBTI Type Dataset](https://www.kaggle.com/datasets/datasnaek/mbti-type)
+      * [Essays Big5](https://www.kaggle.com/datasets/marii8st/essays-big5)
+      * [Personae Corpus](https://www.kaggle.com/datasets/marii8st/personae-corpus)
 4.  Установите необходимые API ключи (для DeepSeek/Gemini) в `Secrets` вашего ноутбука или переменную окружения `NOVITA_API_KEY`.
 
 > Локальный запуск потребует скачивания всех датасетов и ручного изменения путей в коде (`/kaggle/input/...` -\> `ваши_локальные_пути`).
